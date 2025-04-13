@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/upload_background">
+
+    <!-- Fájl kiválasztása gomb -->
+    <Button
+        android:id="@+id/chooseFileButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/file_select"
+        android:backgroundTint="#424242"
+        android:textColor="#FFFFFF"
+        style="@style/Widget.MaterialComponents.Button"
+        android:elevation="4dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Példányszám input -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/copiesInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        app:boxBackgroundColor="#FFFFFF"
+        app:boxStrokeColor="#000000"
+        app:boxStrokeWidth="2dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/copiesEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/document_number"
+            android:inputType="number"
+            android:textColor="#000000" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Feltöltés gomb -->
+    <Button
+        android:id="@+id/uploadButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/upload"
+        android:backgroundTint="#424242"
+        android:textColor="#FFFFFF"
+        style="@style/Widget.MaterialComponents.Button"
+        android:elevation="4dp"
+        android:layout_marginBottom="32dp"/>
+
+    <ProgressBar
+        android:id="@+id/uploadProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:indeterminate="true"
+        android:visibility="gone"/>
+
+</LinearLayout>

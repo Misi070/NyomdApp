@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "928187475343",
+    "project_id": "nyomdapp",
+    "storage_bucket": "nyomdapp.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:928187475343:android:c0c244e6ba567def77d7fa",
+        "android_client_info": {
+          "package_name": "com.example.nyomdapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDyGu3e7C2mbPh9ITT9fnE2PUpu3R1uHIU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
