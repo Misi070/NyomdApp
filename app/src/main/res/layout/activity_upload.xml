@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/upload_background">
+
+    <!-- Fájl kiválasztása gomb -->
+    <Button
+        android:id="@+id/chooseFileButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/file_select"
+        android:backgroundTint="#424242"
+        android:textColor="#FFFFFF"
+        style="@style/Widget.MaterialComponents.Button"
+        android:elevation="4dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Példányszám input -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/copiesInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        app:boxBackgroundColor="#FFFFFF"
+        app:boxStrokeColor="#000000"
+        app:boxStrokeWidth="2dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/copiesEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/document_number"
+            android:inputType="number"
+            android:textColor="#000000" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Méret input -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/sizeInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        app:boxBackgroundColor="#FFFFFF"
+        app:boxStrokeColor="#000000"
+        app:boxStrokeWidth="2dp">
+
+        <Spinner
+            android:id="@+id/sizeSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:minHeight="48dp"
+            android:background="@android:color/white"
+            android:padding="12dp"
+            android:dropDownVerticalOffset="8dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <!-- Feltöltés gomb -->
+    <Button
+        android:id="@+id/uploadButton"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="#4CAF50"
+        android:elevation="4dp"
+        android:text="@string/upload"
+        android:textColor="#FFFFFF" />
+
+    <ImageView
+        android:id="@+id/uploadSuccessImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/login_background"
+        android:visibility="gone"
+        android:layout_gravity="center" />
+
+</LinearLayout>

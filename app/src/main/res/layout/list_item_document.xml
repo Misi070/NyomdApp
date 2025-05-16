@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:background="?android:attr/selectableItemBackground"
+    android:layout_marginBottom="8dp">
+
+    <TextView
+        android:id="@+id/fileNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/file_name"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:padding="4dp" />
+
+    <TextView
+        android:id="@+id/copyCountTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/copies"
+        android:textSize="14sp"
+        android:textColor="#B0BEC5"
+        android:padding="4dp" />
+
+    <TextView
+        android:id="@+id/sizeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/size"
+    android:textSize="14sp"
+    android:textColor="#B0BEC5"
+    android:padding="4dp" />
+
+
+    <TextView
+        android:id="@+id/statusTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/status"
+        android:textSize="14sp"
+        android:textColor="#B0BEC5"
+        android:padding="4dp" />
+
+    <TextView
+        android:id="@+id/uploadDateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/upload_date"
+        android:textSize="14sp"
+        android:textColor="#B0BEC5"
+        android:padding="4dp" />
+
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#780B0B"
+        android:text="@string/delete"
+        app:boxBackgroundColor="#FFFFFF"
+        android:textColor="#FFFFFF"
+        app:boxStrokeColor="#000000" />
+
+</LinearLayout>

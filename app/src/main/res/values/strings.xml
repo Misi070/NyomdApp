@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">NyomdApp</string>
+    <string name="email">Email</string>
+    <string name="password">Jelszó</string>
+    <string name="login">Bejelentkezés</string>
+    <string name="register">Regisztrálok</string>
+    <string name="password_again">Jelszó mégegyszer</string>
+    <string name="hi_user">Üdvözöljük, felhasználó!</string>
+    <string name="logout">Kijelentkezés</string>
+    <string name="file_select">Fájl kiválasztása</string>
+    <string name="document_number">Példányszám</string>
+    <string name="upload">Feltöltés</string>
+    <string name="file_upload">Fájl feltöltése</string>
+    <string name="my_uploads">Saját feltöltések</string>
+    <string name="no_uploads">Még nem töltöttél fel semmilyen dokumentumot</string>
+    <string name="phone">Telefonszám</string>
+    <string name="documents_view">Feltöltött dokumentumaim</string>
+    <string name="file_url">File URL</string>
+    <string name="copies">Darabszám: %1$d</string>
+    <string name="status">Státusz: %1$s</string>
+    <string name="view_profile">Profil Megtekintése</string>
+    <string name="App_name">NyomdApp</string>
+    <string name="document_upload">Dokumentum feltöltése</string>
+    <string name="no_uploaded_documents">Nincs még feltöltött dokumentumod.</string>
+    <string name="delete">Törlés</string>
+    <string name="file_name">Fájl:</string>
+    <string name="upload_date">Feltöltés dátuma: %1$s</string>
+    <string name="delete_document_title">Megrendelés törlése</string>
+    <string name="delete_document_message">Biztosan törölni szeretnéd ezt az elemet?</string>
+    <string name="yes">Igen</string>
+    <string name="no">Nem</string>
+    <string name="navigation">Navigáció a boltba</string>
+    <string name="size">Méret: %1$s</string>
+    <string-array name="document_sizes">
+        <item>A3</item>
+        <item>A4</item>
+        <item>A5</item>
+    </string-array>
+
+</resources>

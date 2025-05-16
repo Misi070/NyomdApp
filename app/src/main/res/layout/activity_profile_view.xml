@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#424242"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Activities.ProfileView">
+
+    <!-- Üdvözlő szöveg -->
+    <TextView
+        android:id="@+id/welcomeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hi_user"
+        android:textSize="24sp"
+        android:textColor="#FFFFFF"
+        android:padding="16dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="150dp"/>
+
+    <!-- Dokumentumok szöveg -->
+    <TextView
+        android:id="@+id/documentsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/documents_view"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:padding="8dp"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Üres lista esetén üzenet -->
+    <TextView
+        android:id="@+id/emptyListMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/no_uploaded_documents"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:padding="16dp" />
+
+    <!-- Dokumentumok RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/documentsRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- Kijelentkezés gomb -->
+    <Button
+        android:id="@+id/logoutButton"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="#FF0000"
+        android:elevation="4dp"
+        android:padding="16dp"
+        android:text="@string/logout"
+        android:textColor="#FFFFFF" />
+</LinearLayout>
